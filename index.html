@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- React & ReactDOM -->
+  <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <!-- Font Awesome for icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+  <div id="root"></div>
+
+  <script type="text/babel">
+    function App() {
+      return (
+        <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center p-4">
+          <div className="max-w-2xl w-full text-center">
+            <div className="bg-white rounded-lg shadow-xl p-8 md:p-12">
+              <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+                Welcome to My Portfolio
+              </h1>
+              <div className="w-24 h-1 bg-indigo-500 mx-auto mb-6"></div>
+              <div className="mb-8">
+                <div className="inline-flex items-center justify-center w-20 h-20 bg-yellow-100 rounded-full mb-4">
+                  <i className="fas fa-tools text-yellow-600 text-2xl"></i>
+                </div>
+                <h2 className="text-2xl font-semibold text-gray-700 mb-4">
+                  Under Construction
+                </h2>
+                <p className="text-gray-600 text-lg leading-relaxed">
+                  Please check back soon to see my latest projects and achievements!
+                </p>
+              </div>
+              <div className="flex justify-center space-x-4">
+                <div className="w-3 h-3 bg-indigo-500 rounded-full animate-bounce"></div>
+                <div className="w-3 h-3 bg-indigo-500 rounded-full animate-bounce" style={{animationDelay: '0.1s'}}></div>
+                <div className="w-3 h-3 bg-indigo-500 rounded-full animate-bounce" style={{animationDelay: '0.2s'}}></div>
+              </div>
+              <p className="mt-8 text-gray-500 text-sm">
+                Coming Soon • 2025
+              </p>
+            </div>
+          </div>
+        </div>
+      );
+    }
+
+    ReactDOM.render(<App />, document.getElementById('root'));
+  </script>
+</body>
+</html>
