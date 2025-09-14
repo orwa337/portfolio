@@ -12,6 +12,9 @@
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   <!-- Font Awesome for icons -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="image/icon.png" />
 </head>
 <body class="bg-gray-100">
   <div id="root"></div>
@@ -19,37 +22,58 @@
   <script type="text/babel">
     function App() {
       return (
-        <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center p-4">
-          <div className="max-w-2xl w-full text-center">
-            <div className="bg-white rounded-lg shadow-xl p-8 md:p-12">
-              <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-                Orwa Houry
-              </h1>
-              <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-                Welcome to My Portfolio
-              </h1>
-              <div className="w-24 h-1 bg-indigo-500 mx-auto mb-6"></div>
-              <div className="mb-8">
-                <div className="inline-flex items-center justify-center w-20 h-20 bg-yellow-100 rounded-full mb-4">
-                  <i className="fas fa-tools text-yellow-600 text-2xl"></i>
+        <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex flex-col justify-between p-4">
+          <div className="flex-grow flex items-center justify-center">
+            <div className="max-w-2xl w-full text-center">
+              <div className="bg-white rounded-lg shadow-xl p-8 md:p-12">
+                <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+                  Orwa Houry
+                </h1>
+                <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+                  Welcome to My Portfolio
+                </h1>
+                <div className="w-24 h-1 bg-indigo-500 mx-auto mb-6"></div>
+                <div className="mb-8">
+                  <div className="inline-flex items-center justify-center w-20 h-20 bg-yellow-100 rounded-full mb-4">
+                    <i className="fas fa-tools text-yellow-600 text-2xl"></i>
+                  </div>
+                  <h2 className="text-2xl font-semibold text-gray-700 mb-4">
+                    Under Construction
+                  </h2>
+                  <p className="text-gray-600 text-lg leading-relaxed">
+                    Please check back soon to see my latest projects and achievements!
+                  </p>
                 </div>
-                <h2 className="text-2xl font-semibold text-gray-700 mb-4">
-                  Under Construction
-                </h2>
-                <p className="text-gray-600 text-lg leading-relaxed">
-                  Please check back soon to see my latest projects and achievements!
+                <div className="flex justify-center space-x-4">
+                  <div className="w-3 h-3 bg-indigo-500 rounded-full animate-bounce"></div>
+                  <div className="w-3 h-3 bg-indigo-500 rounded-full animate-bounce" style={{animationDelay: '0.1s'}}></div>
+                  <div className="w-3 h-3 bg-indigo-500 rounded-full animate-bounce" style={{animationDelay: '0.2s'}}></div>
+                </div>
+                <p className="mt-8 text-gray-500 text-sm">
+                  Coming Soon • 2025
                 </p>
               </div>
-              <div className="flex justify-center space-x-4">
-                <div className="w-3 h-3 bg-indigo-500 rounded-full animate-bounce"></div>
-                <div className="w-3 h-3 bg-indigo-500 rounded-full animate-bounce" style={{animationDelay: '0.1s'}}></div>
-                <div className="w-3 h-3 bg-indigo-500 rounded-full animate-bounce" style={{animationDelay: '0.2s'}}></div>
-              </div>
-              <p className="mt-8 text-gray-500 text-sm">
-                Coming Soon • 2025
-              </p>
             </div>
           </div>
+
+          {/* Footer with social icons */}
+          <footer className="bg-white shadow-inner py-4 mt-8">
+            <div className="flex justify-center space-x-6">
+              <a href="https://www.linkedin.com/in/orwa-houry" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-indigo-600 text-2xl">
+                <i className="fab fa-linkedin"></i>
+              </a>
+              <a href="https://www.xing.com/profile/Orwa_Houry" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-green-600 text-2xl">
+                <i className="fab fa-xing"></i>
+              </a>
+              <a href="https://github.com/orwa337" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-black text-2xl">
+                <i className="fab fa-github"></i>
+              </a>
+              <a href="mailto:orwa.houry@outlook.de" className="text-gray-600 hover:text-red-600 text-2xl">
+                <i className="fas fa-envelope"></i>
+              </a>
+            </div>
+            <p className="text-center text-gray-500 text-sm mt-2">© 2025 Orwa Houry</p>
+          </footer>
         </div>
       );
     }
